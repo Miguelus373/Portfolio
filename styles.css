@@ -1,18 +1,22 @@
 * {
   box-sizing: border-box;
-  font-family: Roboto;
 }
 
 body {
-  padding: 0 5%;
+  font-family: Roboto, sans-serif;
   background-color: #191765;
 }
 
+main {
+  padding: 0 1.5rem;
+}
+
 hr {
-  height: 0;
+  height: 1px;
+  background-color: #646369;
   width: 100%;
   margin: 1.5rem 0;
-  border: 1px solid #646369;
+  border: 0;
 }
 
 .flex {
@@ -22,7 +26,12 @@ hr {
 .navbar {
   justify-content: space-between;
   align-items: center;
-  color: #fff;
+  position: sticky;
+  top: 0;
+  padding: 0 5%;
+  font-weight: 500;
+  color: #fff; 
+  background-color: #191765;
 }
 
 .header {
@@ -33,14 +42,18 @@ hr {
 
 .main-title {
   color: #7D73FC;
+  font-size: 2.2rem;
+  margin-bottom: 0;
 }
 
 .second-title {
   color: #EDECFF;
+  font-size: 1.8rem;
 }
 
 .description {
   color: #C8C8D4;
+  line-height: 1.6rem;
 }
 
 .skills {
@@ -53,7 +66,9 @@ hr {
 
 .skills-list {
   list-style: none;
-  line-height: 25px;
+  line-height: 30px;
+  font-size: 12px;
+  padding: 0 1.2rem;
   color: #F5F5FF;
 }
 
@@ -62,25 +77,49 @@ hr {
 }
 
 .social-media {
-  height: 10rem;
+  height: 5rem;
   text-align: center;
   flex-direction: column;
   justify-content: space-around;
   color: #fff;
+  margin-bottom: 3rem;
 }
 
-.icons {
+.icons i {
   color: #fff;
+  margin: 0 0.8rem;
+  font-size: 1.2rem;
+}
+
+.work-title {
+  color: #9490FF;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 0;
+}
+
+.project-img {
+  max-width: 100%;
+}
+
+.project-title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.4rem;
 }
 
 .project-info {
   color: #DCDCE8;
+  line-height: 1.6rem;
 }
 
 .technologies {
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 0;
   color: #fff;
+  font-size: 0.7rem;
+  margin: 2rem 0 3rem;
 }
 
 .button {
@@ -88,14 +127,20 @@ hr {
   color: #fff;
   text-decoration: none;
   padding: 0.8rem;
+  font-size: 0.8rem;
 }
 
-.contact {
+.contact-title {
+  color: #9390FF;
+  margin-top: 5rem;
+  font-size: 1.6rem;
   text-align: center;
 }
 
 .contact-info {
-  color: #F5F5FF
+  color: #DCDCE8;
+  text-align: center;
+  line-height: 1.5rem;
 }
 
 .form {

@@ -7,11 +7,11 @@
     <title>Miguelus's Portfolio</title>
   </head>  
   <body>
-    <nav>
+    <nav class="navbar flex">
       <p>Miguel Uzcátegui</p>
       <i>Burger-Menu</i>
     </nav>
-    <header>
+    <header class="header flex ">
       <h1>Miguel Uzcátegui</h1>
       <h2>Software Developer</h2>
       <p>
@@ -20,41 +20,45 @@
       <hr>
     </header>
 
-    <section>
-      <p>Languages
+    <section class="skills flex">
+      <div class="skill-item">
         <ul>
+          <li>Languages</li>
           <li>Ruby</li>
           <li>HTML</li>
           <li>CSS</li>
           <li>Javascript</li>
         </ul>
-      </p>
-      <p>Frameworks
+      </div>
+      <div class="skill-item">
         <ul>
+          <li>Frameworks</li>
           <li>Ruby on Rails</li>
           <li>Bootstrap</li>
           <li>RSpec</li>
         </ul>
-      </p>
-      <p>Skills
+      </div>
+      <div class="skill-item">
         <ul>
+          <li>Skills</li>
           <li>GitHub</li>
           <li>Terminal</li>
           <li>Debugging</li>
         </ul>
-      </p>
-      <hr>
+      </div>
     </section>
 
-    <div>
-      <i>Email</i>
-      <i>GitHub</i>
-      <i>Linkedin</i>
-
+    <hr>
+    
+    <div class="social-media flex">
+      <div>
+        <i>Email</i>
+        <i>GitHub</i>
+        <i>Linkedin</i>  
+      </div>
       <span>work</span>
-      <hr>
     </div>
-
+    
     <section>
       <h2>MY RECENT WORK</h2>
       <hr>
@@ -63,10 +67,10 @@
         <h3>Project Title</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, harum vel unde ut aliquid quisquam magni consectetur quaerat expedita nobis totam rerum voluptatem fugiat veniam accusamus enim. Eos, praesentium at!</p>
         <div>
-          <ul>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>Linters</li>
+          <ul class="technologies flex">
+            <li>CSS</li> |
+            <li>HTML</li> |
+            <li>Linters</li> 
           </ul>
           <a href="">See project</a>
         </div>
@@ -75,23 +79,24 @@
 
     <footer>
       <div>
-        <h3>Contact Us</h3>
+        <h3 class="contact">Contact Us</h3>
         <p></p>  
       </div>
         <div>
-        <form action="">
+        <form action="" class="form flex">
           <input type="text" name="" id="">
           <input type="email" name="" id="">
           <textarea name="" id="" cols="30" rows="10"></textarea>
         </form>
         <a href="">See Projects</a>
       </div>
-      <div>
-        <i>Email</i>
-        <i>GitHub</i>
-        <i>Linkedin</i>
-  
-        <span>email@address.com</span>
+      <div class="footer-social-media flex">
+        <div>
+          <i>Email</i>
+          <i>GitHub</i>
+          <i>Linkedin</i>
+        </div>
+        <p>email@address.com</p>
       </div>
     </footer>
   </body>

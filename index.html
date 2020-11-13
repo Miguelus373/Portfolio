@@ -16,27 +16,19 @@
     <title>Miguelus's Portfolio</title>
   </head>
   <body>
-    
     <nav class="navbar">
       <p>Miguel Uzcátegui</p>
       <input type="checkbox" class="nav-check" id="nav-check" />
       <i class="fas fa-bars fa-lg menu-icon"></i>
       <div class="sidemenu">
-          
-            
-              <a href="#portfolio">Portfolio</a>
-            
-            
-              <a href="#contact">Contact</a>
-            
-            
-              <a href="#">About</a>
-            
-          
-        </div>
-      </nav>
-    <main>
+        <a href="#portfolio">Portfolio</a>
 
+        <a href="#contact">Contact</a>
+
+        <a href="#">About</a>
+      </div>
+    </nav>
+    <main>
       <header class="header">
         <h1 class="main-title">Miguel Uzcátegui</h1>
         <h2 class="second-title">Software Developer</h2>
@@ -82,20 +74,25 @@
 
       <div class="social-media">
         <div class="icons">
-          <a href="https://www.linkedin.com/in/miguelus/"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/Miguelus373"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/miguelus/"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/Miguelus373"
+            ><i class="fab fa-github"></i
+          ></a>
           <a href="#"><i class="fab fa-twitter"></i></a>
           <a href="#"><i class="fab fa-angellist"></i></a>
         </div>
       </div>
 
       <p id="portfolio">portfolio</p>
-      
+
       <section>
         <h2 class="work-title">MY RECENT WORK</h2>
         <hr />
         <article>
           <img
+            id="p1"
             class="project-img"
             src="/placeholder-pic.jpeg"
             alt="project image"
@@ -115,9 +112,28 @@
               |
               <li>Linters</li>
             </ul>
-            <a class="button" href="">See project</a>
+            <a class="button" href="#project-1">See project</a>
           </div>
         </article>
+
+        <div id="project-1" class="overlay">
+          <div class="project-popup">
+            <a class="close" href="#p1">&times;</a>
+            <h2>Project Title</h2>
+            <div class="image-div">
+            <img src="/placeholder-pic.jpeg" alt="">
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+              magnam hic reiciendis sint maxime vero voluptatibus enim autem
+              ipsam temporibus, ipsa aut totam repellat amet et quasi est
+              repudiandae placeat.
+            </p>
+            <a class="button" href="">Live Demo<i class="fa fa-link" aria-hidden="true"></i></a>
+            <a class="button" href="">Check the Repo<i class="fab fa-github"></i
+              ></a>
+          </div>
+        </div>
       </section>
 
       <p id="contact">contact</p>
@@ -150,8 +166,12 @@
           <a class="button center" href="">See Projects</a>
           <hr />
           <div class="icons">
-            <a href="https://www.linkedin.com/in/miguelus/"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://github.com/Miguelus373"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/miguelus/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="https://github.com/Miguelus373"
+              ><i class="fab fa-github"></i
+            ></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-angellist"></i></a>
           </div>

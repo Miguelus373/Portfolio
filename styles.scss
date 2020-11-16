@@ -13,6 +13,8 @@ body {
 
 main {
   padding: 0 1.5rem;
+  position: relative;
+  overflow: hidden;
 }
 
 hr {
@@ -25,6 +27,13 @@ hr {
 
 .flex {
   display: flex;
+}
+
+.bg-decoration {
+  background-color: #fff;
+  position: absolute;
+  border-radius: 60px;
+  z-index: -1;
 }
 
 /* Navbar Styles */
@@ -104,6 +113,15 @@ hr {
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  .bg-circle {
+    @extend .bg-decoration;
+    top: 2rem;
+    left: -3.8rem;
+    width: 6rem;
+    height: 6rem;
+    filter: blur(15px);
+  }
 }
 
 .main-title {
@@ -123,8 +141,18 @@ hr {
 }
 
 .skills {
+  position: relative;
   @extend .flex;
   flex-wrap: wrap;
+
+  .bg-circle {
+    @extend .bg-decoration;
+    top: 3rem;
+    right: -3rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    filter: blur(16px);
+  }
 }
 
 .skill-item {
@@ -169,6 +197,8 @@ hr {
 }
 
 .portfolio {
+  position: relative;
+
   article {
     margin-bottom: 3rem;
   }
@@ -180,9 +210,9 @@ hr {
     margin-bottom: 0;
   }
 }
-  
+
 .project-img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .project-title {
@@ -331,6 +361,47 @@ hr {
 
 .email {
   color: #f5f5ff;
+}
+
+/* Background decorations Styles */
+
+.ellipse-1 {
+  @extend .bg-decoration;
+  width: 20rem;
+  height: 1.2rem;
+  filter: blur(20px);
+  transform: rotate(45deg);
+  top: 20%;
+  left: -5rem;
+}
+
+.ellipse-2 {
+  @extend .bg-decoration;
+  width: 16rem;
+  height: 2rem;
+  filter: blur(25px);
+  top: 42%;
+  transform: rotate(-55deg);
+  right: -6rem;
+}
+
+.ellipse-3 {
+  @extend .bg-decoration;
+  width: 15rem;
+  height: 2.2rem;
+  bottom: 34%;
+  filter: blur(40px);
+  left: -6rem;
+}
+
+.ellipse-4 {
+  @extend .bg-decoration;
+  width: 15rem;
+  height: 3rem;
+  bottom: 8%;
+  right: -4rem;
+  transform: rotate(25deg);
+  filter: blur(30px);
 }
 
 /* Hover Styles */

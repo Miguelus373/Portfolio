@@ -11,6 +11,8 @@ body {
 
 main {
   padding: 0 1.5rem;
+  position: relative;
+  overflow: hidden;
 }
 
 hr {
@@ -25,6 +27,13 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.bg-decoration, .header .bg-circle, .skills .bg-circle, .ellipse-1, .ellipse-2, .ellipse-3, .ellipse-4 {
+  background-color: #fff;
+  position: absolute;
+  border-radius: 60px;
+  z-index: -1;
 }
 
 /* Navbar Styles */
@@ -117,6 +126,15 @@ hr {
   text-align: center;
 }
 
+.header .bg-circle {
+  top: 2rem;
+  left: -3.8rem;
+  width: 6rem;
+  height: 6rem;
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
+}
+
 .main-title {
   color: #7d73fc;
   font-size: 2.2rem;
@@ -134,8 +152,18 @@ hr {
 }
 
 .skills {
+  position: relative;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.skills .bg-circle {
+  top: 3rem;
+  right: -3rem;
+  width: 3.6rem;
+  height: 3.6rem;
+  -webkit-filter: blur(16px);
+          filter: blur(16px);
 }
 
 .skill-item {
@@ -182,6 +210,10 @@ hr {
   margin: 0 0 3.8rem;
 }
 
+.portfolio {
+  position: relative;
+}
+
 .portfolio article {
   margin-bottom: 3rem;
 }
@@ -194,7 +226,7 @@ hr {
 }
 
 .project-img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .project-title {
@@ -359,6 +391,49 @@ hr {
 
 .email {
   color: #f5f5ff;
+}
+
+/* Background decorations Styles */
+.ellipse-1 {
+  width: 20rem;
+  height: 1.2rem;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 20%;
+  left: -5rem;
+}
+
+.ellipse-2 {
+  width: 16rem;
+  height: 2rem;
+  -webkit-filter: blur(25px);
+          filter: blur(25px);
+  top: 42%;
+  -webkit-transform: rotate(-55deg);
+          transform: rotate(-55deg);
+  right: -6rem;
+}
+
+.ellipse-3 {
+  width: 15rem;
+  height: 2.2rem;
+  bottom: 34%;
+  -webkit-filter: blur(40px);
+          filter: blur(40px);
+  left: -6rem;
+}
+
+.ellipse-4 {
+  width: 15rem;
+  height: 3rem;
+  bottom: 8%;
+  right: -4rem;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
 }
 
 /* Hover Styles */

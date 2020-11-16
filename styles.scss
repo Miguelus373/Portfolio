@@ -199,8 +199,12 @@ hr {
 .portfolio {
   position: relative;
 
-  article {
+  .project-box {
     margin-bottom: 3rem;
+
+    .project-img {
+      width: 100%;
+    }
   }
   
   .work-title {
@@ -211,9 +215,7 @@ hr {
   }
 }
 
-.project-img {
-  width: 100%;
-}
+
 
 .project-title {
   color: #fff;
@@ -402,6 +404,60 @@ hr {
   right: -4rem;
   transform: rotate(25deg);
   filter: blur(30px);
+}
+
+/* Media Querys */
+
+@media (min-width: 768px) {
+  .header, .skills {
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+
+  .skills {
+    flex-wrap: nowrap;
+  }
+
+  .portfolio {
+    max-width: 63rem;
+    margin: 0 auto;
+
+    .project-box {
+      display: flex;
+
+      .project-img {
+        max-width: 26rem;
+        max-height: 16rem;
+      }
+
+      .project-content {
+        padding: 0 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;;
+
+        .project-title, .project-info, .technologies {
+          margin: 0;
+        }
+        .technologies {
+          padding-left: 0;
+        }
+
+        .button {
+          align-self: flex-start;
+        }
+      }
+    }
+
+    .reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .contact {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
 }
 
 /* Hover Styles */

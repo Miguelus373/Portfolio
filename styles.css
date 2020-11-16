@@ -214,8 +214,12 @@ hr {
   position: relative;
 }
 
-.portfolio article {
+.portfolio .project-box {
   margin-bottom: 3rem;
+}
+
+.portfolio .project-box .project-img {
+  width: 100%;
 }
 
 .portfolio .work-title {
@@ -223,10 +227,6 @@ hr {
   text-align: center;
   font-size: 1.6rem;
   margin-bottom: 0;
-}
-
-.project-img {
-  width: 100%;
 }
 
 .project-title {
@@ -434,6 +434,64 @@ hr {
           transform: rotate(25deg);
   -webkit-filter: blur(30px);
           filter: blur(30px);
+}
+
+/* Media Querys */
+@media (min-width: 768px) {
+  .header, .skills {
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+  .skills {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .portfolio {
+    max-width: 63rem;
+    margin: 0 auto;
+  }
+  .portfolio .project-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .portfolio .project-box .project-img {
+    max-width: 26rem;
+    max-height: 16rem;
+  }
+  .portfolio .project-box .project-content {
+    padding: 0 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .portfolio .project-box .project-content .project-title, .portfolio .project-box .project-content .project-info, .portfolio .project-box .project-content .technologies {
+    margin: 0;
+  }
+  .portfolio .project-box .project-content .technologies {
+    padding-left: 0;
+  }
+  .portfolio .project-box .project-content .button {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .portfolio .reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .contact {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
 }
 
 /* Hover Styles */

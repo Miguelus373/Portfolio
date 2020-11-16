@@ -206,7 +206,7 @@ hr {
       width: 100%;
     }
   }
-  
+
   .work-title {
     color: $title;
     text-align: center;
@@ -214,8 +214,6 @@ hr {
     margin-bottom: 0;
   }
 }
-
-
 
 .project-title {
   color: #fff;
@@ -281,12 +279,11 @@ hr {
       margin: 0;
       width: 80%;
       padding: 0;
-
     }
 
     .button {
       margin-top: 1rem;
-      
+
       i {
         margin-left: 0.3rem;
       }
@@ -409,13 +406,40 @@ hr {
 /* Media Querys */
 
 @media (min-width: 768px) {
-  .header, .skills {
+  .navbar {
+    .menu-icon,
+    .nav-check {
+      display: none;
+    }
+
+    .sidemenu {
+      left: unset;
+      right: 5%;
+    }
+  }
+
+  .header {
     max-width: 30rem;
     margin: 0 auto;
+    position: relative;
+
+    .bg-circle {
+      left: -14rem;
+      top: 4rem;
+    }
   }
 
   .skills {
     flex-wrap: nowrap;
+    max-width: 30rem;
+    margin: 0 auto;
+
+    .bg-circle {
+      width: 6rem;
+      height: 6rem;
+      right: -11rem;
+      top: -4rem;
+    }
   }
 
   .portfolio {
@@ -434,13 +458,17 @@ hr {
         padding: 0 1.5rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;;
+        justify-content: space-between;
 
-        .project-title, .project-info, .technologies {
+        .project-title,
+        .project-info,
+        .technologies {
           margin: 0;
         }
+
         .technologies {
           padding-left: 0;
+          padding-right: 50%;
         }
 
         .button {
@@ -458,12 +486,37 @@ hr {
     max-width: 40rem;
     margin: 0 auto;
   }
+
+  .ellipse-1 {
+    top: 20%;
+    left: -12rem;
+    height: 3rem;
+  }
+
+  .ellipse-2 {
+    height: 4.5rem;
+    width: 20rem;
+    top: 43%;
+    right: -12rem;
+  }
+
+  .ellipse-3 {
+    height: 4rem;
+    bottom: 22%;
+  }
+
+  .ellipse-4 {
+    height: 7rem;
+    width: 20rem;
+    bottom: 12%;
+    right: -12rem;
+  }
 }
 
 /* Hover Styles */
 
 .button:visited {
-  background-color: #5E42D7;
+  background-color: #5e42d7;
 }
 
 .button:hover {

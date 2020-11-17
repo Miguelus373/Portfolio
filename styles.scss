@@ -247,12 +247,21 @@ hr {
     right: 8%;
     flex-direction: column;
     align-items: center;
-    padding: 5%;
+    justify-content: flex-start;
+    padding: 2% 5%;
     color: #fff;
     border: 1px #fff solid;
     background-color: rgba(228, 228, 228, 0.2);
     box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
     border-radius: 2px;
+
+    .xl-title {
+      display: none;
+    }
+
+    .sm-title {
+      display: unset;
+    }
 
     .close {
       font-size: 2rem;
@@ -268,23 +277,31 @@ hr {
     }
 
     .image-div {
-      width: 90%;
+      @extend .flex;
+      justify-content: center;
+      max-height: 50%;
+      max-width: 100%;
 
       img {
+        max-height: 100%;
         max-width: 100%;
       }
     }
 
-    .technologies {
-      margin: 0;
-      width: 80%;
-      padding: 0;
+    p {
+      padding: 0 5%;
     }
 
-    .button {
-      margin-top: 1rem;
+    .technologies {
+      margin: 5% 0;
+    }
 
-      i {
+    .buttons {
+      @extend .flex;
+      justify-content: space-evenly;
+      // margin-top: 10%;
+
+      .button i {
         margin-left: 0.3rem;
       }
     }
@@ -406,6 +423,10 @@ hr {
 /* Media Querys */
 
 @media (min-width: 768px) {
+  body {
+    font-size: 120%;
+  }
+
   .navbar {
     .menu-icon,
     .nav-check {
@@ -443,28 +464,23 @@ hr {
   }
 
   .portfolio {
-    max-width: 63rem;
+    max-width: 65rem;
     margin: 0 auto;
 
     .project-box {
       display: flex;
+      margin-bottom: 6rem;
 
       .project-img {
-        max-width: 26rem;
-        max-height: 16rem;
+        max-width: 52%;
+        height: 100%;
       }
 
       .project-content {
-        padding: 0 1.5rem;
+        padding: 0 2rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-
-        .project-title,
-        .project-info,
-        .technologies {
-          margin: 0;
-        }
+        justify-content: center;
 
         .technologies {
           padding-left: 0;
@@ -479,6 +495,43 @@ hr {
 
     .reverse {
       flex-direction: row-reverse;
+    }
+  }
+
+  .overlay .project-popup {
+    flex-direction: row;
+
+    .sm-title {
+      display: none;
+    }
+
+    .xl-title {
+      display: unset;
+    }
+
+    .image-div {
+      max-height: 100%;
+      max-width: 60%;
+    }
+
+    .popup-content {
+      padding: 0 5%;
+
+      p,
+      .technologies {
+        max-width: 40rem;
+        padding: 0;
+      }
+
+      .buttons {
+        margin-top: 7%;
+        justify-content: flex-start;
+
+        .button {
+          text-align: center;
+          margin-right: 5%;
+        }
+      }
     }
   }
 
